@@ -1,0 +1,48 @@
+.section-three{
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.section-three-header{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 1.6em;
+}
+.section-three-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+
+.list-container{
+    width: 30%;
+}
+.list-container li{
+    font-weight: bold;
+    padding-bottom: 30px;
+    list-style: square;
+}
+
+
+.section-three-image-container{
+    animation: wave 3s infinite linear;
+    width: 50%;
+    padding-right: 100px;
+}
+.section-three-container img{
+    max-width: 100%;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Puedes ajustar esta distancia */
+    }
+}

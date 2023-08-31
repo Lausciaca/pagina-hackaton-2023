@@ -1,0 +1,36 @@
+/* container del section */
+.section-one{
+    padding: 2% 15%;
+}
+
+.introduction-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.introduction-text, .text-two, .text-three, .img-inicio{
+    margin: 20px;
+}
+.text-two, .text-three{
+    text-align: right;
+}
+.introduction-text p, .text-two p, .text-three p{
+    font-size: 1vw;
+}
+
+.image-container {
+    display: inline-block;
+    animation: wave 3s infinite linear;
+}
+.img-inicio{
+    max-width: 90%;
+}
+  
+@keyframes wave {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-30px); /* Puedes ajustar esta distancia */
+}
+}
