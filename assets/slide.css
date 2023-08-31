@@ -1,0 +1,18 @@
+.slide-to-l {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 0.7s forwards ease-in-out;
+}
+.slide-to-r {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 0.7s forwards ease-in-out;
+}
+
+@keyframes slideIn {
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+  
