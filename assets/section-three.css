@@ -14,8 +14,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-right: 200px;
-    padding-left: 200px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
@@ -26,6 +26,7 @@
     font-weight: bold;
     padding-bottom: 30px;
     list-style: square;
+    color: #002981;
 }
 
 
@@ -44,5 +45,21 @@
     }
     50% {
         transform: translateY(-20px); /* Puedes ajustar esta distancia */
+    }
+}
+
+@media (max-width: 1300px){
+    .section-three-container{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .section-three-image-container{
+        display: none;
+    }
+    .list-container{
+        text-align: center;
+    }
+    .list-container li{
+        font-size: 1.3em;
     }
 }

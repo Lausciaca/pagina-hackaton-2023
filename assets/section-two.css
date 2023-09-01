@@ -1,14 +1,14 @@
 .section-two{
-    min-height: 60%;
-    background-color: #1E1E1E;
+    height: auto;
+    background-color: #5B94FD;
     display: flex;
     flex-direction: column;
 }
 .section-two-header{
-    color: white;
     text-align: center;
+    color: #002981;
     font-size: 2em;
-    padding-top: 1em;
+    padding-top: 3em;
 }
 .section-two-container{
     display: flex;
@@ -20,22 +20,45 @@
     overflow: hidden;
 }
 .card{
-    background-color: black;
-    width: 20%;
-    height: 100%;
+    background-color: #1E1E1E;
+    width: calc(25% - 2%); /* Se resta el 2% para considerar el espacio entre las tarjetas */
+    margin-bottom: 4%; /* Espacio entre filas de tarjetas */
     display: flex;
     align-items: center;
     border-radius: 5px;
+    transition: transform 0.3s;
 }
 .card-container{
     padding: 16%;
 }
 .card h4{
     color: #2196f3;
-    text-align: center;
     font-size: 1.6em;
 }
 .card p{
     color: white;
-    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1500px) {
+    .card:hover {
+        transform: scale(1);
+    }
+    .section-two {
+        height: auto; /* Restaurar la altura automática */
+    }
+    .card {
+        width: calc(50% - 4%); /* Ocupar todo el ancho de la columna en dispositivos más pequeños */
+    }
+}
+@media (max-width: 640px){
+    .section-two-container{
+        justify-content: center;
+    }
+    .card {
+        width: calc(100% - 4%); /* Ocupar todo el ancho de la columna en dispositivos más pequeños */
+    }
 }

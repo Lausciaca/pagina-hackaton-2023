@@ -1,6 +1,7 @@
 /* container del section */
 .section-one{
     padding: 2% 15%;
+    padding-top: 4%;
 }
 
 .introduction-container{
@@ -15,7 +16,7 @@
     text-align: right;
 }
 .introduction-text p, .text-two p, .text-three p{
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 .image-container {
@@ -33,4 +34,31 @@
 50% {
     transform: translateY(-30px); /* Puedes ajustar esta distancia */
 }
+}
+
+
+
+@media (max-width: 1581px) {
+    .image-container{
+        width: 50%;
+    }
+    .section-one{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+@media (max-width: 1300px){
+    .image-container{
+        display: none;
+    }
+    .introduction-text p,
+    .text-two p,
+    .text-three p{
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 640px){
+    .section-one{
+        padding-top: 15%;
+    }
 }
